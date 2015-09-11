@@ -12,7 +12,7 @@ public class MonsterMash
 	
 	private MonsterMash()
 	{
-		
+	
 	}
 	
 	public MonsterMash(String monsterName, int monsterEyes,
@@ -27,4 +27,16 @@ public class MonsterMash
 		this.monsterMale = monsterMale;
 	
 	}
+	
+	public String toString()
+	{
+		String monsterInfo = "My monster has " + monsterEyes
+				+ " eyes, and it's name is" + monsterName + " "
+						+ "is the monster a dude? " + monsterMale 
+						+ ". The monster also has " + monsterHair + " hairs, and "
+						+ monsterLegs + " legs. What a silly monster.";
+		
+		return monsterInfo;
+	}
+
 }
