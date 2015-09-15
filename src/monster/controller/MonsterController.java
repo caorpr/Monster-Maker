@@ -50,6 +50,13 @@ public class MonsterController
 		int newLegs = monsterScanner.nextInt();
 		claytonMonster.setmonsterLegs(newLegs);
 		
+		System.out.println("What is the number of its hair strands?");
+		int newHair = monsterScanner.nextInt();
+		claytonMonster.setmonsterHair(newHair);
+		
+		System.out.println("Is it male or Female?");
+		boolean newMale = monsterScanner.nextInt();
+		claytonMonster.setmonsterMale(newMale);
 	}
 }
 
