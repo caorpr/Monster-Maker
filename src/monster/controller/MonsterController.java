@@ -55,7 +55,7 @@ public class MonsterController
 		claytonMonster.setmonsterHair(newHair);
 		
 		System.out.println("Is it male or Female?");
-		boolean newMale = monsterScanner.nextInt();
+		boolean newMale = monsterScanner.nextBoolean();
 		claytonMonster.setmonsterMale(newMale);
 	}
 }
