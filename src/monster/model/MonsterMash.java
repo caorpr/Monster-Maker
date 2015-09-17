@@ -110,8 +110,8 @@ public class MonsterMash
 	
 	public String toString()
 	{
-		String monsterInfo = "My monster has " + monsterHair + 
-				" strands of hair, and it's name is " + monsterName;
+		String monsterInfo = "My monster's name is " + monsterName + 
+				", it has " + monsterHair + " strands of hair, and has " + monsterLegs + " legs.";
 		
 		return monsterInfo;
 	}
