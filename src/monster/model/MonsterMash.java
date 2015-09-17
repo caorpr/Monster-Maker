@@ -111,7 +111,9 @@ public class MonsterMash
 	public String toString()
 	{
 		String monsterInfo = "My monster's name is " + monsterName + 
-				", it has " + monsterHair + " strands of hair, and has " + monsterLegs + " legs.";
+				", it has " + monsterHair + " strands of hair, and has " + monsterLegs + 
+				" legs. Is the monster Male? The answer is: " + monsterMale + ". there you go."
+						+ " What a cool monster!";
 		
 		return monsterInfo;
 	}
