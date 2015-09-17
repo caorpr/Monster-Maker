@@ -6,7 +6,8 @@ import java.util.Scanner;
 
 public class MonsterController
 {
-	private MonsterMash claytonMonster;
+	private MonsterMash claytonMonster; //Declares a Monster called claytonMonster
+	private MonsterMash userMonster;
 	private MonsterDisplay myDisplay;
 	private Scanner monsterScanner;
 	
@@ -27,11 +28,12 @@ public class MonsterController
 	public void start()
 	{
 		myDisplay.displayInfo(claytonMonster.toString());
-		askQuestions();
-		myDisplay.displayInfo("Updated monster info: " + claytonMonster.toString());
+		createUserMonster();
+		myDisplay.displayInfo("User monster info: " + userMonster.toString());
 	}
 	
 	private void askQuestions()
+
 	{
 		
 		System.out.println("Give the monster a name:");
@@ -57,6 +59,34 @@ public class MonsterController
 		System.out.println("Is it male or Female?");
 		boolean newMale = monsterScanner.nextBoolean();
 		claytonMonster.setmonsterMale(newMale);
+	}
+
+	/**
+	 * Creates a MarshmallowMonster instance on user input.
+	 */
+	private void createUserMonster()
+	{
+		//Step one: Gather user information
+		System.out.println("What's the name of your monster?");
+		String userName;
+		userName = monsterScanner.nextLine(); 
+		System.out.println("How many eyes do you have? Number please");
+		int userEyes = monsterScanner.nextInt();
+		System.out.println("How many Mouths does it have? Numbers only");
+		int userMouth;
+		userMouth = monsterScanner.nextInt();
+		System.out.println("How many legs does it have (decimal value only)?");
+		double userLegs = monsterScanner.nextDouble();
+		System.out.println("How much hair does it have? Decimal value again.");
+		double userHair = monsterScanner.nextDouble();
+		System.out.println("Is it a male? True or False?");
+		boolean userMale = monsterScanner.nextBoolean();
+		
+		//Step two: Build the monster using the constructor. Has to be in same order as in line 18 of MONSTERMASH class.
+		userMonster = new MonsterMash(userName, userEyes, userMouth, userLegs, userHair, userMale);
+		
+		
+		
 	}
 }
 

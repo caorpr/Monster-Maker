@@ -29,8 +29,7 @@ public class MonsterMash
 	
 	}
 	
-	
-	
+
 	
 	
 	
@@ -68,7 +67,10 @@ public class MonsterMash
 	
 	
 	
-	// end if the gets, start of the sets
+	/**
+	 *  end of the gets, start of the sets
+	 *
+	 */
 	
 	
 	
@@ -101,9 +103,17 @@ public class MonsterMash
 		this.monsterHair = monsterHair;
 	}
 	
-	public void getmonsterMale(boolean monsterMale)
+	public void setmonsterMale(boolean monsterMale)
 	{
 		this.monsterMale = monsterMale;
+	}
+	
+	public String toString()
+	{
+		String monsterInfo = "My monster has " + monsterHair + 
+				" strands of hair, and it's name is " + monsterName;
+		
+		return monsterInfo;
 	}
 }
 
