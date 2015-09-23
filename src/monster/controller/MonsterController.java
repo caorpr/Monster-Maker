@@ -70,7 +70,7 @@ public class MonsterController
 		System.out.println("What's the name of your monster?");
 		String userName;
 		userName = monsterScanner.nextLine(); 
-		System.out.println("How many eyes do you have? Number please");
+		System.out.println("How many eyes does it have? Number please");
 		int userEyes = monsterScanner.nextInt();
 		System.out.println("How many Mouths does it have? Numbers only");
 		int userMouth;
