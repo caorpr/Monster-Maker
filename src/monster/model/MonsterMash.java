@@ -9,11 +9,7 @@ public class MonsterMash
 	private double monsterHair;
 	private boolean monsterMale;
 	
-	
-	private MonsterMash()
-	{
-		
-	}
+
 	
 	public MonsterMash(String monsterName, int monsterEyes,
 						int monsterMouths, double monsterLegs, 
