@@ -9,15 +9,14 @@ public class MonsterMash
 	private double monsterHair;
 	private boolean monsterMale;
 	
-<<<<<<< HEAD
-	
+
 	private MonsterMash()
 	{
-	
+		
 	}
-=======
 
->>>>>>> origin/master
+
+
 	
 	public MonsterMash(String monsterName, int monsterEyes,
 						int monsterMouths, double monsterLegs, 

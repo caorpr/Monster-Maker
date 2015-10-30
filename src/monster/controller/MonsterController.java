@@ -2,13 +2,6 @@ package monster.controller;
 
 import monster.model.MonsterMash;
 import marshmallows.view.MonsterDisplay;
-<<<<<<< HEAD
-
-public class MonsterController
-{
-	private MonsterMash claytonMonster;
-	private MonsterDisplay myDisplay;
-=======
 import java.util.Scanner;
 
 public class MonsterController
@@ -17,7 +10,7 @@ public class MonsterController
 	private MonsterMash userMonster;
 	private MonsterDisplay myDisplay;
 	private Scanner monsterScanner;
->>>>>>> origin/master
+
 	
 	public MonsterController()
 	{
@@ -27,11 +20,10 @@ public class MonsterController
 		double legs = 2.5;
 		double hair = 2.0;
 		boolean isMale = true;
-		
-<<<<<<< HEAD
-=======
+
+
 		monsterScanner = new Scanner(System.in);
->>>>>>> origin/master
+
 		myDisplay = new MonsterDisplay();
 		claytonMonster = new MonsterMash(name, eyes, mouths, legs, hair, isMale);
 	}
@@ -39,8 +31,8 @@ public class MonsterController
 	public void start()
 	{
 		myDisplay.displayInfo(claytonMonster.toString());
-<<<<<<< HEAD
-=======
+
+
 		createUserMonster();
 		myDisplay.displayInfo("User monster info: " + userMonster.toString());
 	}
@@ -97,10 +89,7 @@ public class MonsterController
 		
 		//Step two: Build the monster using the constructor. Has to be in same order as in line 18 of MONSTERMASH class.
 		userMonster = new MonsterMash(userName, userEyes, userMouth, userLegs, userHair, userMale);
-		
-		
-		
->>>>>>> origin/master
+
 	}
 
 }
